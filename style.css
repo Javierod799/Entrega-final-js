@@ -1,0 +1,36 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url(img/bgpattern3.jpg) ;
+}
+
+
+.imgProductos {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin-top: 1rem;
+}
+
+h1,h2,h3{
+    color: black;
+}
+.card {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.colorBoton {
+    color: black;
+    background-color: orange;
+}
+
+.colorBoton:hover {
+    color: black;
+    background-color: orangered;
+
+}
+
+.bgColor {
+    background-color: rgba(255, 199, 94, 0.637);
+}
