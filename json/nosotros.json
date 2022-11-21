@@ -1,0 +1,7 @@
+[
+    {"id":1, "titulo":"Nuestro equipo!", "descripcion":"Te presentamos nuestro equipo de trabajo", "img": "../img/nosotros1.jpg"},
+    {"id":2, "titulo":"Atencion personalizada", "descripcion":"Brindamos una atencion personalizada cliente a cliente", "img": "../img/nosotros2.jpg"},
+    {"id":3, "titulo":"Trabajo en equipo", "descripcion":"Nos organizamos en equipo para que los productos lleguen en el menor tiempo posible", "img": "../img/nosotros3.jpg"}
+    
+    
+]

@@ -207,3 +207,27 @@ const calcularTotal = () => {
     total.innerHTML = `Total: $${totalCompra}`;
 }
 
+
+
+//seccion de fotos cargada con fetch
+
+const listado = document.getElementById("listado");
+const nosotrosFotos = "json/nosotros.json";
+
+fetch(nosotrosFotos)
+    .then(respuesta => respuesta.json())
+    .then(datos=>{
+        datos.forEach( nosotros => {
+            const card = document.createElement("div");
+            card.classList.add("con-xl-3", "col-md-6", "col-xs-12");
+            card.innerHTML = `
+            <div class="card bgColor">
+            <img src="${nosotros.img}" class="card-img.top imgProductos">
+            <div class="card-body">
+            <h3 class="card-tittle"> ${nosotros.titulo} </h3>
+            <P class="card-text"> ${nosotros.descripcion} </p>
+            </div>
+            `
+            contenedorNosotros.appendChild(card);
+    }).catch(error => console.log(error))
+});
